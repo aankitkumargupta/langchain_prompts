@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "length",
+        "paper",
+        "style"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\n    Summarize the research paper titled \"{paper}\".  \n\n    **Explanation Style:** {style}  \n    (If \"Technical,\" use domain-specific terminology and focus on methodologies and findings.  \n    If \"Non-Technical,\" explain in simple terms, avoiding jargon.  \n    If \"Beginner-friendly,\" provide a mix of both technical and simple explanations.)  \n\n    **Summary Length:** {length}  \n    (The response should be concise, well-structured, and informative.)  \n\n    **Output Format:**  \n    - **Title:** {paper}  \n    - **Summary:** (Generated based on the requested explanation style and length.)  \n    - **Key Points:** (Bullet points summarizing the core findings of the paper.)  \n\n    Now, generate the summary.\n    ",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}
